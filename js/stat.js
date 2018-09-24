@@ -3,7 +3,7 @@
 window.renderStatistics = function (ctx, names, times) {
   var dataCloud = {
     startX: 100,
-    startY: 0,
+    startY: 10,
     widthRect: 420,
     heightRect: 270,
     lenghtShadow: 10,
