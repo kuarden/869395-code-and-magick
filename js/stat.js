@@ -2,7 +2,7 @@
 
 window.renderStatistics = function (ctx, names, times) {
   var dataCloud = {
-    startX: 0,
+    startX: 100,
     startY: 0,
     widthRect: 420,
     heightRect: 270,
@@ -11,8 +11,6 @@ window.renderStatistics = function (ctx, names, times) {
     colorRect: ['rgba(0, 0, 0, 0.7)', 'rgb(256, 256, 256)'],
     text: ['Ура вы победили!', 'Список результатов: ']
   };
-
-  drawRect(dataCloud.startX, dataCloud.startY, dataCloud.pathRect)
 
   drawRect(dataCloud.startX + dataCloud.lenghtShadow, dataCloud.startY + dataCloud.lenghtShadow, dataCloud.widthRect, dataCloud.heightRect, dataCloud.colorRect[0]);
   drawRect(dataCloud.startX, dataCloud.startY, dataCloud.widthRect, dataCloud.heightRect, dataCloud.colorRect[1]);
@@ -36,11 +34,11 @@ window.renderStatistics = function (ctx, names, times) {
   function drawHistogram(arrayTimes, arrayNames) {
 
     var dataHistogram = {
-      barWidth: 40,      
+      barWidth: 40,
       indent: 90,
       indentName: 20,
       indentTime: 10,
-      histogramHeight: 150,   
+      histogramHeight: 150,
       paddingTop: 60,
     };
 
@@ -79,7 +77,7 @@ window.renderStatistics = function (ctx, names, times) {
     } else {
       ctx.fillStyle = 'rgba(0, 0, 255, ' + rndSatur.toString() + ')';
     }
-  }S
+  }
 };
 
 
