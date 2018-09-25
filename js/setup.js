@@ -63,10 +63,6 @@ function mixArray(array) {
 }
 
 function getRandomElement(array) {
-  for (var i = 0; i < array.length; i++) {
-    var randomIndex = Math.floor(Math.random() * array.length);
-    var randomElement = array[randomIndex];
-  }
-  return randomElement;
+  return array[Math.floor(Math.random() * array.length)];
 }
 
